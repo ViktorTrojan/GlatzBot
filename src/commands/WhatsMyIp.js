@@ -5,12 +5,10 @@ const Base = require("./Command.js");
 
 class WhatsMyIp extends Base {
     constructor() {
-        super("WhatsMyIp", "Tells you the IP of the Bot Host", "fun");
+        super("WhatsMyIp", "Tells you the IP of the DiscordBot Hoster", "fun");
     }
 
     async run(message, args) {
-        if (!message.guild) return;
-
         const ips = NetworkUtil.getLocalIP();
         if (Util.isEmpty(ips)) return;
         var ipsFormatted = "";
