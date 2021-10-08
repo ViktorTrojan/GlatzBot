@@ -15,7 +15,7 @@ class Ping extends Base {
         embed.setTitle("🏓 Pong!")
             .addField("Bot Latency", `${msg.createdTimestamp - message.createdTimestamp}ms`, true)
             .addField("API Latency", `${Math.round(this.client.ws.ping)}ms`, true)
-        msg.edit({ embeds: [embed] })
+        msg.edit({ embeds: [embed] });
     }
 }
 
