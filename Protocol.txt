@@ -1,5 +1,6 @@
-npm install --save-dev nodemon
-npm install discord.js
+npm i --save-dev nodemon
+npm i discord.js
+npm i enmap
 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
