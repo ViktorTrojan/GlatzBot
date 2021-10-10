@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
-const Util = require("../Util/Util");
+const Discord = require("discord.js");
 const NetworkUtil = require("../Util/NetworkUtil.js");
 const Base = require("./Command.js");
+const Util = require("../Util/Util.js");
 
 class WhatsMyIp extends Base {
     constructor() {
@@ -10,13 +10,13 @@ class WhatsMyIp extends Base {
 
     async run(message, args) {
         const ips = NetworkUtil.getLocalIP();
-        if (Util.isEmpty(ips)) return;
+        if (ips == undefined) return;
         var ipsFormatted = "";
         for (var i in Object.keys(ips)) {
             ipsFormatted += Object.keys(ips)[i] + " : " + Object.values(ips)[i] + "\n";
         }
 
-        const embed = new Discord.MessageEmbed().setColor(0xAA55E0).setTimestamp().setFooter("GLATZ regiert!", this.client.user.avatarURL());
+        const embed = Util.getEmbed(this.client);
         embed.setTitle("👨‍💻IPS")
             .setDescription(ipsFormatted);
 

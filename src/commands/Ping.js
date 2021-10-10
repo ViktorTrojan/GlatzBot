@@ -1,5 +1,6 @@
 const Base = require("./Command.js");
 const Discord = require('discord.js');
+const Util = require("../Util/Util.js");
 
 class Ping extends Base {
     constructor() {
@@ -9,7 +10,7 @@ class Ping extends Base {
     async run(message, args) {
         if (!message.guild) return;
 
-        const embed = new Discord.MessageEmbed().setColor(0xAA55E0).setTimestamp().setFooter("GLATZ regiert!", this.client.user.avatarURL());
+        const embed = Util.getEmbed(this.client);
 
         var msg = await message.channel.send("Pinging...");
         embed.setTitle("🏓 Pong!")
