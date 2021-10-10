@@ -14,7 +14,7 @@ module.exports = (client, message) => {
         return;
 
     if (client.util.isUserInList(message.author.tag)) {
-        message.channel.send(`${message.author.toString()} Please don't spam!`);
+        message.channel.send(`${message.author.toString()} Please don't spam commands!`);
         return;
     }
 

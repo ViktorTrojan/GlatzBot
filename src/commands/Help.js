@@ -1,4 +1,5 @@
 const Base = require("./Command.js");
+const Util = require("../Util/Util.js");
 
 class Help extends Base {
     constructor() {
@@ -8,13 +9,27 @@ class Help extends Base {
     async run(message, args) {
         if (!message.guild) return;
 
-        var str = "";
+        let fun = "",
+            misc = "";
 
         this.client.commands.forEach(command => {
-            str += `${command.getName()} : ${command.getDescription()}\n`;
+            switch (command.getCategory()) {
+
+                case "fun":
+                    fun += `\`${command.getName()}\` `;
+                    break;
+                case "misc":
+                    misc += `\`${command.getName()}\` `;
+                    break;
+            }
         });
 
-        message.channel.send(str);
+        const embed = Util.getEmbed(this.client);
+        embed.setTitle("🔨 Help")
+
+        .addField("Misc", misc, false)
+            .addField("Fun", fun, false)
+        message.channel.send({ embeds: [embed] });
     }
 }
 

@@ -13,7 +13,7 @@ class Util {
         const removeSleepList = [];
         let flag = false;
         this.sleepList.forEach((time, user) => {
-            if (Date.now() - time > (1000 * 6)) {
+            if (Date.now() - time > (1000 * 3)) {
                 removeSleepList.push(user);
                 return;
             }
