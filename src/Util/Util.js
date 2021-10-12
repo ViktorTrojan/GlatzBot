@@ -28,6 +28,12 @@ class Util {
         return flag;
     }
 
+    static sleep(ms) {
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        });
+    }
+
     static getEmbed(client) {
         return new Discord.MessageEmbed()
             .setColor(0xAA55E0)
