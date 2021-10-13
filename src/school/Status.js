@@ -23,9 +23,10 @@ class Status {
     }
 
     async run() {
-        await Util.sleep(60 * 1000 - (this.date.getSeconds() * 1000)); // to let it run at roughly 0 seconds
         while (true) {
+            await Util.sleep(60 * 1000 - (new Date().getSeconds() * 1000)); // to let it run at roughly 0 seconds
             this.date = new Date();
+
             if (this.date.getDay() == 0 || this.date.getDay() == 6) {
                 await this.weekend();
                 continue;
@@ -47,7 +48,6 @@ class Status {
                     type: "PLAYING"
                 });
             }
-            await Util.sleep(60 * 1000);
         }
     }
 }
