@@ -6,7 +6,7 @@ GlatzBot was developed to run on the Raspberry Pi 4. Main Feature is to show the
  
 ### Installation For Linux
 #### Install NodeJs with:
-- curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+- curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 - sudo apt-get install -y nodejs
 #### Install NPM packages with:
 - npm i discord.js
