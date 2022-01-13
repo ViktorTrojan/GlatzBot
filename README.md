@@ -1,4 +1,4 @@
-<img src="icon.png" align="right" width = 128 height = 128>
+<img src="res/icon.png" align="right" width = 128 height = 128>
 
 # ReschberryFinder Made With [![discord](https://img.shields.io/badge/Discord-blue?style=for-the-badge)](https://discord.js.org)
 > A Discord-Bot that helps you to find your Raspberry Pi 4
@@ -6,6 +6,14 @@
 ## Description
 
 ReschberryFinder is a Discord-Bot made with Discord.js developed to run on a Raspberry Pi 4. A Raspberry is mostly accessed via Remote Connection(SSH) and therefore you need the IP-Address of it. ReschberryFinder shows you all IP-Addresses which can be useful when hostnames are disabled in a Network.
+
+## ShowCase
+<p align="center">
+     <img src="res/about.png" align="center" width="500">
+</p>
+<p align="center">
+     <img src="res/whatsmyip.png" align="center" width="300">
+ </p>
 
 ## How it Works
 It uses Discord.js to work with Discord. By using the Command **!WhatsMyIp** the Pi returns all IP's of the various Interfaces.
