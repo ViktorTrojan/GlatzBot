@@ -13,7 +13,7 @@ class About extends Base {
         const embed = Util.getEmbed(this.client);
         embed.setTitle("💻 About")
             .setThumbnail(this.client.user.avatarURL())
-            .setDescription("Reschberry was developed to run on the Raspberry Pi 4. Main Feature is to show the Local-IP of the Pi in the Network")
+            .setDescription("ReschberryFinder was developed to run on the Raspberry Pi 4. Main Feature is to show the Local-IP of the Pi in the Network")
             .addField("Credits", `©ViktorTrojan`, false)
         message.channel.send({ embeds: [embed] });
     }
