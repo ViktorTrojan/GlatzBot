@@ -69,5 +69,9 @@ People contributed to this Project
 ## Version History
  See all Releases on [Releases Page](https://github.com/ViktorTrojan/ReschberryFinder/releases)
  
+ * 2.0 ReschberryFinder Release
+    * Added Status for my class lessons
+    * Renamed Project
+     
  * 1.0 Minimal Release
     * Initial Release with minimal functionality
