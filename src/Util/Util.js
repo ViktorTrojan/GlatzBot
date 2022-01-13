@@ -38,7 +38,7 @@ class Util {
         return new Discord.MessageEmbed()
             .setColor(0xAA55E0)
             .setTimestamp()
-            .setFooter("Glatz regiert!", client.user.avatarURL());
+            .setFooter("Responded at", client.user.avatarURL());
     }
 
     static isEmpty(obj) {

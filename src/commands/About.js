@@ -13,8 +13,8 @@ class About extends Base {
         const embed = Util.getEmbed(this.client);
         embed.setTitle("💻 About")
             .setThumbnail(this.client.user.avatarURL())
-            .setDescription("GlatzBot was developed to run on the Raspberry Pi 4. Main Feature is to show the Local-IP of the Pi because it can be quite a tedious task to find out")
-            .addField("Credits", `©RequestFX#1541, GLATZ`, false)
+            .setDescription("Reschberry was developed to run on the Raspberry Pi 4. Main Feature is to show the Local-IP of the Pi in the Network")
+            .addField("Credits", `©ViktorTrojan`, false)
         message.channel.send({ embeds: [embed] });
     }
 }

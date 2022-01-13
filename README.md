@@ -1,11 +1,11 @@
 <img src="icon.png" align="right" width = 128 height = 128>
 
-# GlatzBot Made With [![discord](https://img.shields.io/badge/Discord-blue?style=for-the-badge)](https://discord.js.org)
+# ReschberryFinder Made With [![discord](https://img.shields.io/badge/Discord-blue?style=for-the-badge)](https://discord.js.org)
 > A Discord-Bot that helps you to find your Raspberry Pi 4
 
 ## Description
 
-GlatzBot is a Discord-Bot made with Discord.js developed to run on a Raspberry Pi 4. A Raspberry is mostly accessed via Remote Connection(SSH) and therefore you need the IP-Address of it. Glatzbot shows you all IP-Addresses which can be useful when hostnames are disabled in a Network.
+ReschberryFinder is a Discord-Bot made with Discord.js developed to run on a Raspberry Pi 4. A Raspberry is mostly accessed via Remote Connection(SSH) and therefore you need the IP-Address of it. ReschberryFinder shows you all IP-Addresses which can be useful when hostnames are disabled in a Network.
 
 ## How it Works
 It uses Discord.js to work with Discord. By using the Command **!WhatsMyIp** the Pi returns all IP's of the various Interfaces.
@@ -45,7 +45,7 @@ It uses Discord.js to work with Discord. By using the Command **!WhatsMyIp** the
 
 ### Auto-Startup For Linux with Crontab
 * $ crontab -e
-* @reboot npm start --prefix <location>/GlatzBot
+* @reboot npm start --prefix <location>/ReschberryFinder
 > change <location> with the Directory Path to the Project(e.g /home/pi/Documents)
 
 ## Help
@@ -59,7 +59,7 @@ People contributed to this Project
 [@ViktorTrojan](https://github.com/ViktorTrojan)
 
 ## Version History
- See all Releases on [Releases Page](https://github.com/ViktorTrojan/GlatzBot/releases)
+ See all Releases on [Releases Page](https://github.com/ViktorTrojan/ReschberryFinder/releases)
  
  * 1.0 Minimal Release
     * Initial Release with minimal functionality
